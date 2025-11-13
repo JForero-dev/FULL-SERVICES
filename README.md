@@ -26,7 +26,7 @@
 ## 🧭 Enlace del sitio
 
 🔗 **GitHub Pages:**  
-👉 [https://jacobo-forero.github.io/FULL-SERVICES/](https://jacobo-forero.github.io/FULL-SERVICES/)
+👉 [https://jforero-dev.github.io/FULL-SERVICES/](https://jforero-dev.github.io/FULL-SERVICES/)
 
 ---
 
@@ -59,7 +59,7 @@
 **FULL SERVICES S.A.S**  
 Desarrollo y diseño web por **JACOBO FORERO**  
 📧 sistemas@fullservices.com.co <br>
-🌐 [https://jacobo-forero.github.io/FULL-SERVICES/](https://jacobo-forero.github.io/FULL-SERVICES/)
+🌐 [https://jforero-dev.github.io/FULL-SERVICES/](https://jforero-dev.github.io/FULL-SERVICES/)
 
 ---
 
@@ -74,3 +74,4 @@ Prohibida la reproducción o redistribución sin autorización escrita.
 <div align="center">
   <sub>💡 Desarrollado por el equipo de Full Services</sub>
 </div>
+
