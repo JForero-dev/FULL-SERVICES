@@ -1,5 +1,5 @@
 const BASE_URL = window.location.origin.includes("github.io")
-    ? "https://jacobo-forero.github.io/FULL-SERVICES/"
+    ? "https://jforero-dev.github.io/FULL-SERVICES/"
     : "";
 
 const modal = document.getElementById('serviceModal');
@@ -91,7 +91,6 @@ document.querySelectorAll('.btn-modal').forEach(btn => {
 
         let mediaHTML = "";
 
-        // Collage especial con enlaces (solo Alquiler)
         if (id === "6" && data.images) {
             mediaHTML = `
                 <div class="special-collage">
