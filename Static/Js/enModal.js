@@ -64,10 +64,10 @@ const serviceData = {
             { src: "Static/Images/Trailers/1.png", link: "Templates/Servicios/Trailers1.html" },
             { src: "Static/Images/Trailers/2.png", link: "Templates/Servicios/Trailers2.html" },
             { src: "Static/Images/Trailers/3.png", link: "Templates/Servicios/Trailers3.html" },
-            { src: "Static/Images/Trailers/4.png", link: "Templates/Servicios/Trailers4.html" },
+            /*{ src: "Static/Images/Trailers/7.png", link: "Templates/Servicios/Trailers4.html" },*/
             { src: "Static/Images/Trailers/5.png", link: "Templates/Servicios/Trailers5.html" },
             { src: "Static/Images/Trailers/6.png", link: "Templates/Servicios/Trailers6.html" },
-            { src: "Static/Images/Trailers/7.png", link: "Templates/Servicios/Trailers7.html" },
+            { src: "Static/Images/Trailers/4.png", link: "Templates/Servicios/Trailers7.html" },
             { src: "Static/Images/Trailers/8.png", link: "Templates/Servicios/Trailers8.html" },
             { src: "Static/Images/Trailers/9.png", link: "Templates/Servicios/Trailers9.html" },
         ]
