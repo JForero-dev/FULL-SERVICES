@@ -10,7 +10,7 @@
   <a href="https://www.linkedin.com/company/full-services-sas" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge"/></a>
   <a href="https://wa.link/mi5n03" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?logo=whatsapp&logoColor=white&style=for-the-badge"/></a>
   <a href="https://www.youtube.com/channel/UCM24jb9IC27P_QPR2GwM6fw" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=white&style=for-the-badge"/></a>
-  <a href="https://beacons.ai/fullservicesingenieria" target="_blank"><img src="https://img.shields.io/badge/Beacons-121212?logo=linktree&logoColor=white&style=for-the-badge"/></a>
+  <a href="" target="_blank"><img src="https://img.shields.io/badge/Beacons-121212?logo=linktree&logoColor=white&style=for-the-badge"/></a>
 </div>
 
 ---
@@ -18,7 +18,7 @@
 <h1 align="center">Bienvenido a Full Services S.A.S 🚀</h1>
 
 <p align="center">
-  <em>Prestamos servicios que integran el sector petrolero, industrial, civil y arquitectónico, logrando el mejoramiento y progreso continuo.</em>
+  <em>Prestamos servicios especializados de workover, alquiler de equipos y mantenimiento integral para operaciones seguras, eficientes y confiables.</em>
 </p>
 
 ---

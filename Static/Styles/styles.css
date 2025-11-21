@@ -1,3 +1,4 @@
+
 :root {
     --color-primary: #9D060D;
     --color-primary-dark: #c0392b;
@@ -601,6 +602,7 @@ section {
 .about-controls {
     display: flex;
     justify-content: center;
+    align-items: center; /* Nuevo: alinea verticalmente todo en el control */
     margin-top: var(--spacing-md);
     gap: var(--spacing-sm);
 }
@@ -657,6 +659,57 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* 🎨 NUEVOS ESTILOS PARA INDICADORES Y BOTÓN CTA */
+
+.dots-container {
+    display: flex;
+    gap: 8px; /* Ejemplo de valor fijo si --spacing-xs no está definido */
+    margin: 0 15px; /* Ejemplo de valor fijo si --spacing-md no está definido */
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-text-secondary, #9ca3af); /* Color inactivo */
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0.6;
+}
+
+.dot.active {
+    background-color: var(--color-primary); 
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.dot:hover {
+    background-color: var(--color-primary-dark);
+    opacity: 0.8;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c80000;
+    transform: translateY(-2px); 
 }
 
 /* SERVICIOS */
