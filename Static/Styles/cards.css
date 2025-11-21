@@ -25,7 +25,7 @@
 }
 
 body {
-    background: url("../images/background.png") center/cover no-repeat fixed;
+    background: url("../Images/background.png") center/cover no-repeat fixed;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -107,7 +107,7 @@ body {
 }
 
 .card-front {
-    background: url("../images/base.jpg") center/cover no-repeat;
+    background: url("../Images/base.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -246,7 +246,7 @@ body {
             rgba(0, 0, 0, 0.25) 60%,
             rgba(0, 0, 0, 0.500) 100%
         ),
-        url("../images/back.jpg");
+        url("../Images/back.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
