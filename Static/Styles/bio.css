@@ -1,0 +1,295 @@
+/* Reset y tipografía */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body, html{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    color:#fff;
+    background: url('../images/2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/* Overlay mejorado con blur + tono más elegante */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index:0;
+}
+
+/* Contenedor principal */
+.container{
+    position: relative;
+    z-index:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:40px 20px;
+    max-width:500px; 
+    margin:0 auto;
+}
+
+/* Logo */
+.logo img{
+    width:250px;
+    height:250px;
+    margin-bottom:1px;
+    margin-top: 5px;
+}
+
+@keyframes glow{
+    0%{box-shadow:0 0 10px #c80000;}
+    100%{box-shadow:0 0 25px #c80000;}
+}
+
+.divider{
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffffff, transparent);
+    margin: -15px auto 10px auto;
+    border-radius: 50px;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:2.5rem;
+    color:#fff;
+    margin-bottom:0px;
+    margin-top: -15px;
+}
+
+.hero p{
+    font-size:1rem;
+    margin:5px 0;
+}
+
+.ubicacion{
+    font-style:italic;
+    color:#ccc;
+}
+
+.subtitulo {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Botones uniformes estilo Liquid Glass */
+.btn{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:18px 30px;
+    border-radius:25px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    text-decoration:none;
+    color:#fff;
+    font-weight:500;
+    width:100%;
+    max-width:500px;
+    justify-content:center;   
+    position:relative;        
+}
+
+.btn img.btn-icon{
+    width:40px;
+    height:40px;
+    position:absolute;     
+    left:20px;            
+    object-fit:contain;
+    filter: brightness(0) invert(1);
+}
+
+.btn span{
+    font-size:1.25rem;
+    display:flex;
+    align-items:center;
+}
+
+/* Hover Liquid Glass */
+.btn:hover{
+    transform: translateY(-4px) scale(1.04);
+    background: rgba(200, 0, 0, 0.35);
+    border: 1px solid rgba(255, 50, 50, 0.8);
+    box-shadow: 
+        0 0 12px rgba(255, 0, 0, 0.6),
+        0 0 22px rgba(255, 0, 0, 0.35),
+        inset 0 0 12px rgba(255, 0, 0, 0.28);
+    transition: all 0.35s ease;
+}
+
+/* Servicios */
+.servicios{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    width:100%;
+    margin-bottom:12px;
+}
+
+/* Acciones */
+.acciones{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    align-items:center;
+    width:100%;
+    margin-bottom:30px;
+}
+
+/* Multimedia */
+.multimedia{
+    padding:20px;
+    width:100%;
+    text-align:center;
+}
+.multimedia video{
+    width:100%;
+    max-width:500px;
+    border-radius:20px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 20px;
+}
+
+::selection {
+    background: rgba(200, 0, 0, 0.3); 
+    color: #fff; 
+}
+
+::-moz-selection {
+    background: rgba(200, 0, 0, 0.3);
+    color: #fff;
+}
+
+.privacity {
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 35px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.privacity:hover {
+    color: #c80000;
+    text-decoration: none;
+}
+
+/* Contenedor superior */
+.top-actions {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.top-actions i {
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+.top-actions i:hover {
+    background: rgba(255,0,0,0.5);
+}
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.25);
+
+    color: white;
+    font-size: 0.9rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .4s ease, transform .4s ease;
+    transform: translateY(-10px);
+    z-index: 999;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media(max-width:500px){
+    .hero h1{font-size:2rem;}
+    .btn{width:95%; max-width:100%; padding:15px 20px;}
+    .btn span{font-size:1.15rem;}
+    .btn img.btn-icon{width:36px;height:36px;}
+    .multimedia video{max-width:95%;}
+}
