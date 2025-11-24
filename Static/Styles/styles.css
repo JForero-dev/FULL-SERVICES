@@ -602,7 +602,7 @@ section {
 .about-controls {
     display: flex;
     justify-content: center;
-    align-items: center; /* Nuevo: alinea verticalmente todo en el control */
+    align-items: center; 
     margin-top: var(--spacing-md);
     gap: var(--spacing-sm);
 }
@@ -661,19 +661,17 @@ section {
     object-fit: cover;
 }
 
-/* 🎨 NUEVOS ESTILOS PARA INDICADORES Y BOTÓN CTA */
-
 .dots-container {
     display: flex;
-    gap: 8px; /* Ejemplo de valor fijo si --spacing-xs no está definido */
-    margin: 0 15px; /* Ejemplo de valor fijo si --spacing-md no está definido */
+    gap: 8px; 
+    margin: 0 15px; 
 }
 
 .dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: var(--color-text-secondary, #9ca3af); /* Color inactivo */
+    background-color: var(--color-text-secondary, #9ca3af); 
     border: none;
     padding: 0;
     cursor: pointer;
