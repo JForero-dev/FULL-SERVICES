@@ -564,3 +564,57 @@ body.dark-mode .rig-status.maintenance {
     background: linear-gradient(135deg, #f1c40f, #b7950b);
     color: var(--color-background);
 }
+
+
+body.dark-mode .header {
+    background-color: var(--color-background);
+    border-bottom-color: var(--color-border);
+}
+
+body.dark-mode .vacancy-list li {
+    background: var(--color-surface);
+    border-color: var(--color-border);
+}
+
+body.dark-mode .vacancy-list li:hover {
+    border-color: var(--color-primary);
+}
+
+body.dark-mode .details-panel,
+body.dark-mode .work-modal-content {
+    background: var(--color-surface);
+    border-color: var(--color-border);
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    background: #121212;
+    color: var(--color-text);
+    border-color: var(--color-border);
+}
+
+body.dark-mode .custom-file label {
+    background: #121212;
+    border-color: var(--color-border);
+    color: var(--color-text-secondary);
+}
+
+body.dark-mode .custom-file label:hover {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+body.dark-mode .vacancy-pagination button {
+    background: var(--color-surface);
+    border-color: var(--color-border);
+    color: var(--color-text);
+}
+
+body.dark-mode .vacancy-pagination button:hover:not(:disabled) {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+body.dark-mode .footer {
+    background-color: #111;
+}

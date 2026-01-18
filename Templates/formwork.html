@@ -12,10 +12,10 @@
     <link rel="icon" type="image/x-icon" href="../Static/Images/FULL-LOGO.ico">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../Static/Styles/styles.css">
     <link rel="stylesheet" href="../Static/Styles/responsive.css">
     <link rel="stylesheet" href="../Static/Styles/darkmode.css">
     <link rel="stylesheet" href="../Static/Styles/animations.css">
+    <link rel="stylesheet" href="../Static/Styles/workVacantes.css">
 
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,71 +86,100 @@
         </div>
     </header>
 
+    <!-- SECCIÓN TRABAJE CON NOSOTROS -->
     <section class="trabaje-section">
         <div class="container">
             <h1 class="trabaje-title" id="inicio">Trabaje con Nosotros</h1>
-            
+
             <p class="trabaje-description">
-                Creemos en un equipo de trabajo comprometido y solidario. Por esto, <strong>S&J Full Services S.A.S.</strong> busca personal con actitud, pasión por el desarrollo personal y profesional, y el deseo de contribuir al crecimiento de nuestra empresa y de un país que progresa gracias a la labor que realizamos día a día.
+                Creemos en un equipo de trabajo comprometido y solidario. Por esto,
+                <strong>S&J Full Services S.A.S.</strong> busca personal con actitud, pasión por el desarrollo
+                personal y profesional.
             </p>
-            
-            <div class="contact-form-wrapper reveal">
-                <form class="contact-form" id="jobForm" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <label for="name">Nombre completo</label>
-                        <input type="text" id="name" name="name" required>
-                        <span class="error-message" id="nameError"></span>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" name="email" required>
-                        <span class="error-message" id="emailError"></span>
-                    </div>
+            <div class="work-layout reveal">
+                <!-- Izquierda: Vacantes -->
+                <div class="vacancies-panel">
+                    <h3>Vacantes Disponibles</h3>
+                    <ul id="vacancyList" class="vacancy-list"></ul>
+                </div>
 
-                    <div class="form-group">
-                        <label for="phone">Teléfono</label>
-                        <input type="tel" id="phone" name="phone">
-                        <span class="error-message" id="phoneError"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Cuéntanos brevemente sobre ti..." required></textarea>
-                        <span class="error-message" id="messageError"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="cv">Hoja de vida (PDF)</label>
-                        <div class="custom-file">
-                            <input type="file" id="cv" name="cv" accept="application/pdf" required>
-                            <label for="cv" id="cvLabel">Seleccionar archivo</label>
-                        </div>
-                        <span class="file-name" id="fileName">Ningún archivo seleccionado</span>
-                        <span class="error-message" id="cvError"></span>
-                    </div>
-
-                    <div class="form-group form-check">
-                        <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
-                        <label for="privacyPolicy">
-                            Acepto la <a href="../Templates/formwork.html" target="_blank">Política de Tratamiento de Datos Personales</a>.
-                        </label>
-                        <span class="error-message" id="policyError"></span>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary btn-full">
-                        Enviar solicitud
-                    </button>
-                    
-                    <div class="form-success" id="formSuccess">
-                        ¡Tu solicitud ha sido enviada con éxito! Nos pondremos en contacto contigo pronto!
-                    </div>
-                </form>
+                <!-- Derecha: Requisitos -->
+                <div class="details-panel">
+                    <h3 id="vacancyTitle">Seleccione una vacante</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci doloremque corrupti animi quibusdam obcaecati voluptatem consequuntur deserunt ipsa, tempore unde odit corporis numquam provident fuga accusantium totam quaerat sapiente, cum odio commodi consequatur. Fugit quis, consequatur </p>
+                    <ul id="vacancyRequirements" class="requirements-list">
+                        <li>Elige una vacante para ver los requisitos.</li>
+                    </ul>
+                    <button id="applyBtn" class="btn btn-primary" disabled>Aplicar</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Modal de contactos -->
+    <!-- MODAL FORMULARIO -->
+    <div class="work-modal" id="workModal">
+        <div class="work-modal-content">
+            <button class="work-modal-close" id="closeModal">&times;</button>
+            <h3 id="modalTitle">Aplicar a vacante</h3>
+
+            <form class="contact-form" id="jobForm" enctype="multipart/form-data">
+                <input type="hidden" id="vacancyInput" name="vacancy">
+
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone">
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="cv">Hoja de vida (PDF)</label>
+                    <div class="custom-file">
+                        <input type="file" id="cv" name="cv" accept="application/pdf" required>
+                        <label for="cv" id="cvLabel">Seleccionar archivo</label>
+                    </div>
+                    <span class="file-name" id="fileName">Ningún archivo seleccionado</span>
+                    <span class="error-message" id="cvError"></span>
+                </div>
+
+                <div class="form-group form-check">
+                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                    <label for="privacyPolicy">
+                        Acepto la <a href="../Templates/formwork.html" target="_blank">Política de Tratamiento de Datos</a>.
+                    </label>
+                    <span class="error-message" id="policyError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Enviar solicitud</button>
+                <div class="form-success" id="formSuccess"></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="vacancy-pagination">
+        <button id="prevPage">← </button>
+        <span id="pageInfo">1</span>
+        <button id="nextPage">→</button>
+    </div>
+
     <button id="waButton" class="wa-button" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </button>
@@ -195,11 +224,9 @@
         </div>
     </div>
 
-    <!-- Botón Back to Top -->
     <button id="backToTop" class="back-to-top" aria-label="Volver arriba">
         <i class="fas fa-arrow-up"></i>
     </button>
-
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
@@ -258,7 +285,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 <strong>S&J Full Services S.A.S</strong>. Todos los derechos reservados.</p>
+                <p>&copy; 2026 <strong>S&J Full Services S.A.S</strong>. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
@@ -270,7 +297,6 @@
     <script src="../Static/Js/smooth.js"></script>
     <script src="../Static/Js/backToTop.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="../Static/Js/enFormWorkUs.js"></script>
-
+    <script src="../Static/Js/workVacantes.js"></script>
 </body>
 </html>
