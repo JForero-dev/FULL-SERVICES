@@ -35,7 +35,7 @@ body {
 
 .person-name,
 .role,
-.contact-item .label,
+.contact-item .label    ,
 .card-back .qr-url {
     background: var(--metal);
     background-clip: text;
