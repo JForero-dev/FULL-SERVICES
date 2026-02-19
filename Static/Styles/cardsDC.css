@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Rajdhani", sans-serif;
 }
 
 .card {
@@ -33,12 +33,9 @@ body {
     height: 100vh;
 }
 
-.brand-main,
-.brand-sub,
 .person-name,
 .role,
 .contact-item .label,
-.card-back h2,
 .card-back .qr-url {
     background: var(--metal);
     background-clip: text;
@@ -129,8 +126,8 @@ body {
 
 .logo {
     position: absolute;
-    top: 8px;
-    left: 6px;
+    top: 25px;
+    left: 25px;
     width: 185px;
     height: auto;
     opacity: 0.95;
@@ -192,6 +189,7 @@ body {
 }
 
 .brand {
+    color: #0a0a0a;
     position: absolute;
     bottom: 60px;
     left: 60px;
@@ -200,15 +198,15 @@ body {
 }
 
 .brand-main {
-    font-family: Impact, sans-serif;
-    font-size: 5em;
-    font-weight: 900;
-    letter-spacing: 5px;
+    font-family: Rajdhani, sans-serif;
+    font-size: 3.7em;
+    font-weight: 100;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .brand-sub {
-    font-family: Impact, sans-serif;
+    font-family: Rajdhani, sans-serif;
     font-size: 1.6em;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -246,7 +244,7 @@ body {
             rgba(0, 0, 0, 0.25) 60%,
             rgba(0, 0, 0, 0.500) 100%
         ),
-        url("../Images/back.jpg");
+        url("../Images/dcback.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -269,6 +267,7 @@ body {
 }
 
 .qr-wrap h2 {
+    color: #0a0a0a;
     font-weight: 500;
     margin-bottom: 10px;
     font-size: 1.5em;
