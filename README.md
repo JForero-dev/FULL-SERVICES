@@ -26,7 +26,7 @@
 ## 🧭 Enlace del sitio
 
 🔗 **GitHub Pages:**  
-👉 [https://jac0bzz.github.io/FULL-SERVICES/](https://jac0bzz.github.io/FULL-SERVICES/)
+👉 [https://jac0bzz.github.io/FS/](https://jac0bzz.github.io/FS/)
 
 ---
 
@@ -59,7 +59,7 @@
 **FULL SERVICES S.A.S**  
 Desarrollo y diseño web por **JACOBO FORERO**  
 📧 desarrollo@fullservices.com.co <br>
-🌐 [https://jac0bzz.github.io/FULL-SERVICES/](https://jac0bzz.github.io/FULL-SERVICES/)
+🌐 [https://jac0bzz.github.io/FS/](https://jac0bzz.github.io/FS/)
 
 ---
 
