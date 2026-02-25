@@ -45,6 +45,24 @@ const serviceData = {
         `,
         images: [ "Static/Images/Mantenimiento 1.jpeg", "Static/Images/Mantenimiento 3.jpeg", "Static/Images/Mantenimiento 4.jpeg"]
     },
+    4: {
+        title: "Rent Piping",
+        icon: "fa-solid fa-oil-can",
+        content: `
+            <p>At <strong>Full Services</strong> we offer a <strong>rental service for oil pipes in millimeter measurements</strong>, designed to meet the operational demands of the oil & gas sector.
+            We have pipes in optimal condition, <strong>inspected and with certified maintenance</strong>, guaranteeing safety and reliability in every operation.
+            </p>
+            <p>Our goal is to <strong>ensure operational continuity</strong> for our customers, reducing downtime and optimizing costs. We have <strong>immediate stock available</strong>, specialized technical advice, and flexible solutions that adapt to temporary or high-demand projects in the field.
+            </p>
+            <p>
+            Choosing <strong>Full Services</strong> means having a strategic partner that combines experience, quality, and ongoing technical support.
+            We accompany each project with a focus on efficiency, safety, and compliance with oil industry standards.
+            </p>
+
+Translated with DeepL.com (free version)
+        `,
+        images: [ "Static/Images/Mantenimiento 1.jpeg", "Static/Images/Mantenimiento 3.jpeg", "Static/Images/Mantenimiento 4.jpeg"]
+    },
     6: {
         title: "Rental",
         icon: "fa-solid fa-truck-monster",

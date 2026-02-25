@@ -45,6 +45,24 @@ const serviceData = {
         `,
         images: [ "Static/Images/Mantenimiento 1.jpeg", "Static/Images/Mantenimiento 3.jpeg", "Static/Images/Mantenimiento 4.jpeg"]
     },
+    4: {
+        title: "Alquiler de Tuberia",
+        icon: "fa-solid fa-oil-can",
+        content: `
+            <p>En <strong>Full Services</strong> ofrecemos el servicio de <strong>alquiler de tubería petrolera en medidas milimétricas</strong>, diseñado para responder a las exigencias operativas del sector oil & gas.
+            Contamos con tubería en óptimas condiciones, <strong>inspeccionada y con mantenimiento certificado</strong>, garantizando seguridad y confiabilidad en cada operación.
+            </p>
+            <p>
+            Nuestro objetivo es <strong>asegurar la continuidad operativa</strong> de nuestros clientes, reduciendo tiempos muertos y optimizando costos.
+            Disponemos de <strong>stock inmediato</strong>, asesoría técnica especializada y soluciones flexibles que se adaptan a proyectos temporales o de alta demanda en campo.
+            </p>
+            <p>
+            Elegir <strong>Full Services</strong> es contar con un socio estratégico que combina experiencia, calidad y respaldo técnico permanente.
+            Acompañamos cada proyecto con un enfoque orientado a la eficiencia, la seguridad y el cumplimiento de los estándares de la industria petrolera.
+            </p>
+        `,
+        images: [ "Static/Images/Mantenimiento 1.jpeg", "Static/Images/Mantenimiento 3.jpeg", "Static/Images/Mantenimiento 4.jpeg"]
+    },
     6: {
         title: "Alquiler",
         icon: "fa-solid fa-truck-monster",
